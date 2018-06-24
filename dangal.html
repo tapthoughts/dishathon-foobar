@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <!-- <script src="uikit/dist/js/uikit-icons.min.js"></script> -->
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" />
+        
+        <!-- UIkit JS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script> -->
+    </head>
+    <body style="background-color:Black;">
+        <div>
+
+            <!-- NavBar with Search -->
+            <!-- <div> -->
+            <div uk-sticky="offset: 20">
+                <nav class="uk-navbar-container" uk-navbar style="margin-left: 10px; margin-right: 10px;
+                                                                                    margin-top: -5px; margin-bottom: -5px;
+                                                                                     opacity:0.75;">
+                    <button style="margin:auto; margin-left: 10px;" class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
+                        <span uk-icon="menu"></span>
+                    </button>
+            
+                    <div class="uk-margin" style="margin-left: 10px; margin-right: 10px; width: auto;">
+                        <form class="uk-search uk-search-default">
+                            <a href="remote.html" class="uk-search-icon-flip" uk-search-icon></a>
+                            <input class="uk-search-input" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!-- </div> -->
+
+            <!-- sidemenu -->
+            <div class="uk-offcanvas-content">
+            
+            
+                <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar">
+            
+                        <ul class="uk-nav uk-nav-default">
+                            <li class="uk-active">
+                                <a href="#">Active</a>
+                            </li>
+                            <li class="uk-parent">
+                                <a href="#">Parent</a>
+                                <ul class="uk-nav-sub">
+                                    <li>
+                                        <a href="#">Sub item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sub item</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="uk-nav-header">Header</li>
+                            <li>
+                                <a href="#">
+                                    <span class="uk-margin-small-right" uk-icon="phone"></span> Item</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="uk-margin-small-right" uk-icon="home"></span> Item</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="uk-margin-small-right" uk-icon="bell"></span> Item</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </div>
+            
+            </div>           
+
+
+          <!-- remote -->
+            <!-- <img data-src="./images/remote.png"   style="width: 100%; height:700px;"  alt="Remote" uk-img> -->
+
+            <!-- desc -->
+            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/dangal.jpg"
+                uk-img style="margin-top:30px;">
+                <!-- <h1>Dangal</h1> -->
+                <!-- <span uk-icon="play-circle; ratio: 3"></span>
+                 -->
+                <span uk-icon="icon: play-circle; ratio: 5; button-color=yellow;"></span>
+                
+            </div>
+            <p uk-margin>
+                <a  style=" margin-left: 20px; border-radius: 20px; color: #cc7722; border-color: #cc7722;" class="uk-button uk-button-default" href="#">Play</a>
+                <!-- <button style="margin:auto; margin-left:20px; border-radius:20px;" class="uk-button uk-button-default">Watch trailer</button> -->
+                <!-- <button class="uk-button uk-button-default" disabled>Disabled</button> -->
+                <span style="margin-left:125px;" uk-icon="bookmark"></span>
+                <!-- <span style="margin-left:15px;" uk-icon="bookmark"></span> -->
+                    <span style="margin-left:10px; color: yellow;" uk-icon="star"></span>
+                    <span uk-icon="star" style="color: yellow;"></span>
+                    <span uk-icon="star" style="color: yellow;"></span>
+                    <span uk-icon="star" style="color: yellow;"></span>
+                    <span uk-icon="star";></span>              
+            </p>
+            <!-- <hr> -->
+            <h1 class="uk-heading-line uk-text-center" style="margin-bottom: 20px; color:white;">
+                <span>Dangal</span></h1>
+                
+                <p uk-margin style="margin: 10px; 10px; 10 px; 10px; color:white;">
+                     Dangal Dangal Poster.jpg Theatrical release poster Hindi दंगल Directed by Nitesh Tiwari Produced by Aamir Khan Kiran Rao
+                    Siddharth Roy Kapur Written by Nitesh Tiwari Piyush Gupta Shreyas Jain Nikhil Meharotra Starring Aamir Khan Sakshi Tanwar
+                    Fatima Sana Shaikh Zaira Wasim Sanya Malhotra Suhani Bhatnagar Aparshakti Khurana Girish Kulkarni Narrated by Aparshakti
+                    Khurana Music by Pritam Cinematography Setu.
+                </p>
+            
+
+            <hr>
+            
+    </div>
+            <!-- Sticks until the bottom of its parent container -->
+            <div style="margin-top: 20px; margin-bottom: 20px;">
+                <div uk-sticky="bottom: true;">
+                    <!-- <nav class="uk-navbar-container" uk-navbar> -->
+                    <ul class="uk-iconnav">
+                        <li style="margin:auto;">
+                            <a href="remote.html" uk-icon="icon: phone"></a>
+                        </li>
+                        <li style="margin:auto;">
+                            <a href="index.html" uk-icon="icon: home"></a>
+                        </li>
+                        <li style="margin:auto;">
+                            <a href="#" uk-icon="icon: bell"></a>
+                        </li>
+                    </ul>
+                    <!-- </nav> -->
+                </div>
+            </div>
+            
+        
+    </body>
+</html>
+
